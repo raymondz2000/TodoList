@@ -1,0 +1,73 @@
+.client{
+    
+        position: fixed;
+        width: 30vw;
+        height: 30vh;
+        left: 10vw;
+        top: 10vh;
+        border: 0;
+        border-radius: 4vw;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        padding: 5vh 3vw;
+        box-sizing: border-box;
+        z-index: 1;    
+}
+#labelinput{
+    color: rgb(17, 116, 83);
+    font-size: 2vw;
+    
+}
+ #input{
+    width: 20vw;
+    height: 2vh;
+    font-size: 1.5vw;
+ }
+ #addtodo{
+    position: absolute;
+    left: 330px;
+    bottom: 160px;
+    width: 3vw;
+    height: 3vw;
+    border: 0;
+    border-radius: 10vw;
+    background: rgb(35, 110, 85);
+    color: #eeeeee;
+    outline: 0;
+    font-size: 2.5vw;
+ }
+body {
+    background-image: url("b.jpg");
+    background-size:cover;
+    margin: 50px;
+    padding: 0;
+ }
+
+
+.tool{
+    transform: scale(1.2);
+    position: fixed;
+    left: 16vw;
+    top: 30vh;
+    border: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.todo{
+    transform: scale(1.5);
+    position:fixed;
+    height: 10vh;
+    left: 50vw;
+    top: 10vh;
+    border: 2;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size:2vw;
+    
+}
+footer {
+            text-align: center;
+            padding: 3px;
+            color:rgb(2, 12, 12);
+            position:fixed;
+            bottom: 2vh;
+        }

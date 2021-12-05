@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>To Do list</title>
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="todo.js"> </script>
+    
+     <!--put the css here for the whole page-->
+</head>
+
+<!--body goes here-->
+<body onload="inititem()"> 
+   
+    <h1>To Do list checker</h1>
+
+        <div class ="client" id ="client">
+
+            
+            
+            <label for="input" id = "labelinput">What's your todays plan?</label>
+            <input type="text" id="input" pattern=".*\S.*" value="">
+
+            <script>var press = document.getElementById("input");
+               press.addEventListener("keydown", function (e) {
+                    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                        add();
+                    }
+                });
+            </script>
+
+            <button type="button" name = "button" id="addtodo" onclick="add()">+</button>
+
+            
+        </div>
+
+        <div class = "tool">
+           
+            <button type="button" name = "button" class = "toolbutton" id="delete" onclick="deleteitem()"><span class="button">DELETE</span></button>
+            <button type="button" name = "button" class = "toolbutton" id="highlight" onclick="highlight()" ><span class="button">HIGHLIGHT</span></button>
+            <button type="button" name = "button" class = "toolbutton" id="sort" onclick="sort()" ><span class="button">SORT</span></button>
+           
+            
+        </div>
+        
+
+        <div class = "todo">
+            <div class = "TODO">List For Today</div>
+            
+           <ul id = "sectiontoday">
+
+           </ul>
+        </div>
+        <footer>
+            <p>Author: Raymond Zhu</p>
+            <p><a href="mailto:hege@example.com ">Raymondzhu@cmail.carleton.ca</a></p>
+        </footer>
+</body>
+
+</html>
